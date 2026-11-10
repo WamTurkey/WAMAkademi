@@ -1,0 +1,3694 @@
+.wam-dashboard {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 24px 40px;
+}
+
+.wam-hero {
+    min-height: 260px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #0f1720, #273445);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 54px 64px;
+    margin-bottom: 28px;
+}
+
+.wam-hero-content {
+    max-width: 720px;
+}
+
+.wam-hero-badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+    opacity: .8;
+}
+
+.wam-hero h1 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin: 0 0 14px;
+    color: #fff;
+}
+
+.wam-hero p {
+    font-size: 19px;
+    margin-bottom: 28px;
+    opacity: .88;
+}
+
+.wam-hero-button {
+    display: inline-block;
+    padding: 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.wam-welcome {
+    margin-bottom: 20px;
+}
+
+.wam-welcome h2 {
+    margin-bottom: 4px;
+    font-size: 28px;
+}
+
+.wam-welcome p {
+    color: #6b7280;
+    margin: 0;
+}
+
+.wam-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.wam-stat-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.wam-stat-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef3ff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.wam-stat-card span {
+    display: block;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.wam-stat-card strong {
+    display: block;
+    font-size: 26px;
+    margin-top: 2px;
+}
+
+.wam-content-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    gap: 28px;
+}
+
+.wam-section {
+    margin-bottom: 34px;
+}
+
+.wam-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.wam-section-header h3 {
+    margin: 0;
+    font-size: 21px;
+}
+
+.wam-section-header a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.wam-course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.wam-course-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.wam-course-cover {
+    height: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.wam-excel-cover {
+    background: linear-gradient(135deg, #1f7a4d, #42b883);
+}
+
+.wam-course-info {
+    padding: 18px;
+}
+
+.wam-course-category {
+    display: inline-block;
+    font-size: 12px;
+    background: #eef3ff;
+    color: #3156d3;
+    border-radius: 7px;
+    padding: 5px 8px;
+    margin-bottom: 10px;
+}
+
+.wam-course-info h4 {
+    font-size: 18px;
+    margin: 0 0 16px;
+}
+
+.wam-progress-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.wam-progress {
+    height: 6px;
+    background: #edf0f3;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.wam-progress-value {
+    width: 0%;
+    height: 100%;
+    background: #3f6df6;
+}
+
+.wam-course-button {
+    display: inline-block;
+    margin-top: 16px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.wam-recommended-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.wam-recommended-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 18px;
+    min-height: 105px;
+}
+
+.wam-recommended-card span {
+    display: block;
+    color: #6b7280;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.wam-recommended-card strong {
+    font-size: 15px;
+}
+
+.wam-sidebar {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 20px;
+    align-self: start;
+}
+
+.wam-upcoming-item {
+    display: flex;
+    gap: 14px;
+    padding: 16px 0;
+    border-bottom: 1px solid #edf0f3;
+}
+
+.wam-upcoming-item:last-child {
+    border-bottom: 0;
+}
+
+.wam-upcoming-item > div:last-child strong,
+.wam-upcoming-item > div:last-child span {
+    display: block;
+}
+
+.wam-upcoming-item > div:last-child span {
+    color: #6b7280;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.wam-date {
+    width: 48px;
+    height: 52px;
+    border-radius: 10px;
+    background: #eef3ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.wam-date strong {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.wam-date span {
+    font-size: 10px;
+    margin-top: 3px;
+    color: #546cd8;
+}
+
+@media (max-width: 1100px) {
+    .wam-content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wam-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .wam-course-grid,
+    .wam-recommended-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .wam-dashboard {
+        padding: 0 14px 30px;
+    }
+
+    .wam-hero {
+        padding: 34px 24px;
+        min-height: 220px;
+    }
+
+    .wam-hero h1 {
+        font-size: 31px;
+    }
+
+    .wam-stats,
+    .wam-course-grid,
+    .wam-recommended-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================================
+   WAM AKADEMİ - GENİŞ DASHBOARD LAYOUT
+   ========================================================= */
+
+.wam-dashboard {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 32px 40px 60px;
+    box-sizing: border-box;
+}
+
+/* Moodle'un standart dar içerik sınırını kaldır */
+body.path-local-wamakademi #page,
+body.path-local-wamakademi #page-content,
+body.path-local-wamakademi #region-main,
+body.path-local-wamakademi .main-inner {
+    max-width: none !important;
+}
+
+body.path-local-wamakademi .main-inner {
+    width: 100% !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+}
+
+/* Hero */
+.wam-hero {
+    width: 100%;
+    min-height: 300px;
+    box-sizing: border-box;
+}
+
+/* İstatistik kartları */
+.wam-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+/* Eğitimler + Yaklaşanlar */
+.wam-main-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(300px, 1fr);
+    gap: 32px;
+    align-items: start;
+}
+
+/* Eğitim kartları */
+.wam-course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* Mobil/tablet */
+@media (max-width: 1100px) {
+    .wam-main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wam-course-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .wam-dashboard {
+        padding: 20px 16px 40px;
+    }
+
+    .wam-stats,
+    .wam-course-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.wam-course-cover {
+    height: 175px;
+    overflow: hidden;
+    background: #f3f4f6;
+}
+
+.wam-course-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.wam-course-fallback {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #1f7a4d, #42b883);
+}
+
+/* =========================================================
+   WAM AKADEMİ - DASHBOARD V2
+   Referans görsele göre hizalama ve hero düzeni
+   ========================================================= */
+
+body.path-local-wamakademi {
+    background: #f8fafc;
+}
+
+/* Ana içerik genişliği */
+.wam-dashboard {
+    width: 100%;
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 18px 24px 60px;
+    box-sizing: border-box;
+}
+
+/* Hero navbar'a daha yakın ve daha geniş */
+.wam-hero {
+    width: 100%;
+    min-height: 330px;
+    margin: 0;
+    padding: 42px 40px 78px;
+    border-radius: 16px;
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(
+            circle at 75% 40%,
+            rgba(61, 92, 246, 0.16),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #0b1220 0%,
+            #111c31 55%,
+            #16223a 100%
+        );
+
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.10);
+}
+
+/* Hero içerik */
+.wam-hero-content {
+    max-width: 640px;
+}
+
+.wam-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    min-height: 28px;
+    padding: 0 12px;
+    border-radius: 999px;
+
+    background: rgba(79, 70, 229, 0.18);
+    color: #8ea2ff;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+
+    margin-bottom: 20px;
+    opacity: 1;
+}
+
+.wam-hero h1 {
+    margin: 0 0 14px;
+    color: #fff;
+
+    font-size: 46px;
+    line-height: 1.08;
+    font-weight: 800;
+    letter-spacing: -1.3px;
+}
+
+.wam-hero p {
+    margin: 0 0 28px;
+
+    font-size: 18px;
+    color: rgba(255,255,255,0.86);
+}
+
+/* Hero butonları */
+.wam-hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.wam-hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+    padding: 0 24px;
+
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none !important;
+
+    transition:
+        transform .15s ease,
+        box-shadow .15s ease,
+        background .15s ease;
+}
+
+.wam-hero-button:hover {
+    transform: translateY(-1px);
+}
+
+.wam-hero-button.primary {
+    background: #3f63f4;
+    color: #fff;
+
+    border: 1px solid #3f63f4;
+    box-shadow: 0 8px 18px rgba(63, 99, 244, 0.24);
+}
+
+.wam-hero-button.secondary {
+    background: rgba(8, 15, 28, 0.50);
+    color: #fff;
+
+    border: 1px solid rgba(255,255,255,0.28);
+}
+
+/* =========================================================
+   KPI KARTLARI
+   Hero altına oturur ve aşağıdaki ana grid ile hizalıdır
+   ========================================================= */
+
+.wam-stats {
+    position: relative;
+    z-index: 3;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+
+    margin: -54px 0 34px;
+}
+
+.wam-stat-card {
+    min-height: 112px;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    padding: 22px 24px;
+
+    background: #fff;
+    border: 1px solid #e7ebf1;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.07);
+}
+
+.wam-stat-icon {
+    width: 50px;
+    height: 50px;
+    flex: 0 0 50px;
+
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eef3ff;
+
+    font-size: 21px;
+    font-weight: 800;
+    color: #3459e6;
+}
+
+.wam-stat-card span {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.wam-stat-card strong {
+    margin-top: 6px;
+
+    font-size: 27px;
+    line-height: 1;
+    color: #111827;
+}
+
+/* =========================================================
+   ANA GRID
+   Sol içerik + sağ yaklaşanlar
+   ========================================================= */
+
+.wam-content-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 360px;
+    gap: 28px;
+
+    /* KPI sol/sağ kenarlarını bu grid ile hizala */
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.wam-main-content {
+    min-width: 0;
+}
+
+.wam-section {
+    margin-bottom: 36px;
+}
+
+.wam-section-header {
+    min-height: 34px;
+    margin-bottom: 16px;
+}
+
+.wam-section-header h3 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #111827;
+}
+
+/* =========================================================
+   EĞİTİM KARTLARI
+   ========================================================= */
+
+.wam-course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.wam-course-card {
+    border-radius: 15px;
+    border: 1px solid #e5e9f0;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.035);
+}
+
+.wam-course-cover {
+    height: 174px;
+    overflow: hidden;
+}
+
+.wam-course-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.wam-course-info {
+    padding: 16px 18px 18px;
+}
+
+.wam-course-info h4 {
+    min-height: 46px;
+
+    margin: 0 0 15px;
+
+    font-size: 17px;
+    line-height: 1.35;
+    font-weight: 750;
+    color: #111827;
+}
+
+.wam-course-button {
+    margin-top: 17px;
+    color: #225de8;
+}
+
+/* =========================================================
+   YAKLAŞANLAR
+   ========================================================= */
+
+.wam-sidebar {
+    border-radius: 16px;
+    padding: 20px 22px;
+
+    border: 1px solid #e6eaf0;
+
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.035);
+}
+
+.wam-upcoming-item {
+    padding: 16px 0;
+}
+
+/* Moodle'un standart içerik padding'lerini azalt */
+body.path-local-wamakademi .main-inner {
+    width: 100% !important;
+    max-width: none !important;
+
+    padding-top: 0 !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+
+body.path-local-wamakademi #page-content,
+body.path-local-wamakademi #region-main {
+    max-width: none !important;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .wam-stats {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .wam-content-grid {
+        grid-template-columns: minmax(0, 1fr) 320px;
+    }
+
+    .wam-course-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 950px) {
+
+    .wam-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: -40px;
+    }
+
+    .wam-content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .wam-dashboard {
+        padding: 10px 12px 40px;
+    }
+
+    .wam-hero {
+        min-height: 300px;
+        padding: 34px 24px 70px;
+    }
+
+    .wam-hero h1 {
+        font-size: 34px;
+    }
+
+    .wam-stats {
+        grid-template-columns: 1fr;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .wam-course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wam-hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .wam-hero-button {
+        width: 100%;
+    }
+}
+
+/* =========================================================
+   WAM AKADEMİ - ÜST NAVBAR
+   ========================================================= */
+
+.wam-top-nav {
+    gap: 6px;
+    margin-left: 8px;
+}
+
+.wam-top-nav a {
+    display: inline-flex;
+    align-items: center;
+
+    min-height: 42px;
+    padding: 0 14px;
+
+    color: #475569;
+    text-decoration: none !important;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    border-radius: 9px;
+
+    transition:
+        background .15s ease,
+        color .15s ease;
+}
+
+.wam-top-nav a:hover {
+    background: #f1f5f9;
+    color: #111827;
+}
+
+.wam-nav-search {
+    margin-right: 10px;
+}
+
+.wam-nav-search input {
+    width: 220px;
+    height: 38px;
+
+    padding: 0 14px 0 38px;
+
+    border: 1px solid #dbe2ea;
+    border-radius: 10px;
+
+    background:
+        #fff
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%2364748b' stroke-width='2' viewBox='0 0 24 24'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E")
+        no-repeat 13px center;
+
+    color: #111827;
+
+    font-size: 14px;
+    outline: none;
+}
+
+.wam-nav-search input:focus {
+    border-color: #7390f5;
+    box-shadow: 0 0 0 3px rgba(63, 99, 244, .10);
+}
+
+/* =========================================================
+   WAM AKADEMİ - EĞİTİMLERİM SAYFASI (paylaşılan chrome + katalog rozeti)
+   ========================================================= */
+
+.wam-my-courses-body #page-header {
+    display: none !important;
+}
+
+.wam-page-badge {
+    display: inline-flex;
+    padding: 6px 11px;
+
+    border-radius: 999px;
+
+    background: #eef2ff;
+    color: #405de6;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .4px;
+}
+
+.wam-catalog-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 42px;
+    padding: 0 18px;
+
+    border-radius: 9px;
+    background: #315cf4;
+    color: #fff !important;
+
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none !important;
+}
+
+/* =========================================================
+   WAM AKADEMİ - TAKVİM SAYFASI
+   ========================================================= */
+
+.wam-calendar-body #page-header {
+    display: none !important;
+}
+
+.wam-calendar-page {
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 32px 24px 60px;
+    box-sizing: border-box;
+}
+
+.wam-calendar-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    margin-bottom: 34px;
+}
+
+.wam-calendar-heading h1 {
+    margin: 6px 0 8px;
+
+    font-size: 34px;
+    font-weight: 800;
+    color: #111827;
+}
+
+.wam-calendar-heading p {
+    margin: 0;
+
+    color: #64748b;
+    font-size: 16px;
+}
+
+.wam-timeline {
+    position: relative;
+    padding-left: 34px;
+}
+
+.wam-timeline::before {
+    content: "";
+
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    bottom: 8px;
+
+    width: 2px;
+
+    background: #dfe5ec;
+}
+
+.wam-timeline-item {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    margin-bottom: 24px;
+}
+
+.wam-timeline-marker {
+    position: absolute;
+
+    left: -34px;
+    top: 29px;
+
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fff;
+    border: 2px solid #315cf4;
+
+    z-index: 2;
+}
+
+.wam-timeline-marker span {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #315cf4;
+}
+
+.wam-timeline-card {
+    background: #fff;
+
+    border: 1px solid #e5e9f0;
+    border-radius: 16px;
+
+    padding: 24px;
+
+    box-shadow: 0 4px 15px rgba(15, 23, 42, .045);
+}
+
+.wam-timeline-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+
+    margin-bottom: 22px;
+}
+
+.wam-timeline-type {
+    display: inline-flex;
+
+    margin-bottom: 8px;
+    padding: 5px 9px;
+
+    border-radius: 999px;
+
+    background: #eef3ff;
+    color: #315cf4;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .5px;
+}
+
+.wam-timeline-card h2 {
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 1.3;
+
+    font-weight: 800;
+    color: #111827;
+}
+
+.wam-timeline-link {
+    white-space: nowrap;
+
+    color: #315cf4;
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none !important;
+}
+
+.wam-timeline-dates {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.wam-date-box {
+    padding: 16px 18px;
+
+    border: 1px solid #e7ebf1;
+    border-radius: 12px;
+
+    background: #f8fafc;
+}
+
+.wam-date-box span {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.wam-date-box strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #111827;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.wam-date-box small {
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.wam-calendar-empty {
+    padding: 70px 30px;
+
+    text-align: center;
+
+    background: #fff;
+    border: 1px solid #e5e9f0;
+    border-radius: 16px;
+}
+
+@media (max-width: 700px) {
+
+    .wam-calendar-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .wam-timeline-dates {
+        grid-template-columns: 1fr;
+    }
+
+    .wam-timeline-card-header {
+        flex-direction: column;
+    }
+}
+
+/* =========================================================
+   WAM AKADEMİ - FULL WIDTH HERO V3
+   ========================================================= */
+
+/*
+ * Dashboard'ın dış genişlik sınırını kaldırıyoruz.
+ * Hero artık ekranın tamamına yayılabilecek.
+ */
+.wam-dashboard {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0 0 60px;
+}
+
+/*
+ * Moodle'un hero çevresinde oluşturduğu beyaz boşlukları kaldır.
+ */
+body.path-local-wamakademi #page,
+body.path-local-wamakademi #page-content,
+body.path-local-wamakademi #region-main,
+body.path-local-wamakademi .main-inner {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+body.path-local-wamakademi .main-inner {
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+body.path-local-wamakademi #region-main {
+    padding: 0 !important;
+}
+
+/*
+ * HERO
+ */
+.wam-hero {
+    width: 100%;
+    min-height: 370px;
+
+    margin: 0;
+    padding: 0;
+
+    border-radius: 0;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 72% 40%,
+            rgba(54, 91, 230, .18),
+            transparent 35%
+        ),
+        linear-gradient(
+            120deg,
+            #07111f 0%,
+            #0c1729 55%,
+            #101e34 100%
+        );
+}
+
+/*
+ * Hero içerisindeki metin ve görsel.
+ */
+.wam-hero-inner {
+    width: 100%;
+    max-width: 1480px;
+
+    min-height: 370px;
+
+    margin: 0 auto;
+    padding: 44px 48px 72px;
+
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: minmax(0, .95fr) minmax(420px, 1.05fr);
+
+    align-items: center;
+    gap: 30px;
+}
+
+.wam-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 650px;
+}
+
+.wam-hero-visual {
+    position: relative;
+
+    height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    overflow: hidden;
+}
+
+.wam-hero-visual img {
+    display: block;
+
+    width: 100%;
+    max-width: 650px;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center right;
+}
+
+/*
+ * KPI ve ana içerik hero gibi full-width olmayacak.
+ * Eski hizalarını koruyacaklar.
+ */
+.wam-stats,
+.wam-content-grid {
+    width: calc(100% - 48px);
+    max-width: 1480px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+ * KPI kartlarını hero üzerine bindir.
+ */
+.wam-stats {
+    margin-top: -54px;
+    margin-bottom: 34px;
+}
+
+
+/* Tablet */
+@media (max-width: 950px) {
+
+    .wam-hero-inner {
+        grid-template-columns: 1fr;
+        padding: 40px 28px 70px;
+    }
+
+    .wam-hero-visual {
+        display: none;
+    }
+
+    .wam-stats,
+    .wam-content-grid {
+        width: calc(100% - 32px);
+    }
+}
+
+/* =========================================================
+   WAM AKADEMİ - FULL BLEED HERO FINAL
+   ========================================================= */
+
+/* Moodle'un dış gri/beyaz boşluklarını kaldır */
+body.path-local-wamakademi {
+    background: #fff !important;
+}
+
+body.path-local-wamakademi #page,
+body.path-local-wamakademi #page-wrapper,
+body.path-local-wamakademi #page-content,
+body.path-local-wamakademi #region-main,
+body.path-local-wamakademi .main-inner {
+    width: 100% !important;
+    max-width: none !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+body.path-local-wamakademi #page {
+    background: #fff !important;
+}
+
+body.path-local-wamakademi #region-main {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Dashboard dış kabuğu artık tam genişlik */
+.wam-dashboard {
+    width: 100%;
+    max-width: none;
+
+    margin: 0;
+    padding: 0 0 60px;
+
+    background: #fff;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.wam-hero {
+    position: relative;
+
+    width: 100%;
+    min-height: 455px;
+
+    margin: 0;
+    padding: 0;
+
+    border-radius: 0;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 12, 27, 0.98) 0%,
+            rgba(5, 18, 39, 0.96) 38%,
+            rgba(7, 23, 48, 0.72) 58%,
+            rgba(6, 20, 43, 0.32) 100%
+        ),
+        url("/local/wamakademi/pix/wam-hero.png")
+        no-repeat
+        right center;
+
+    background-size:
+        100% 100%,
+        auto 100%;
+
+    box-shadow: none;
+}
+
+/* Hafif mavi ışık geçişi */
+.wam-hero::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at 72% 50%,
+            rgba(45, 91, 255, 0.13),
+            transparent 34%
+        );
+}
+
+.wam-hero-inner {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1480px;
+
+    min-height: 455px;
+
+    margin: 0 auto;
+    padding: 74px 56px 96px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+}
+
+.wam-hero-content {
+    max-width: 610px;
+}
+
+.wam-hero-badge {
+    margin-bottom: 24px;
+}
+
+.wam-hero h1 {
+    margin-bottom: 18px;
+
+    font-size: 48px;
+    line-height: 1.08;
+}
+
+.wam-hero p {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+}
+
+/* =========================================================
+   KPI KARTLARI
+   ========================================================= */
+
+.wam-stats {
+    position: relative;
+    z-index: 5;
+
+    width: calc(100% - 120px);
+    max-width: 1480px;
+
+    margin:
+        -70px auto
+        38px;
+}
+
+/* =========================================================
+   ALT İÇERİK NORMAL HİZADA
+   ========================================================= */
+
+.wam-content-grid {
+    width: calc(100% - 120px);
+    max-width: 1480px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+
+    .wam-hero {
+        background-size:
+            100% 100%,
+            auto 88%;
+    }
+
+    .wam-hero-inner {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    .wam-stats,
+    .wam-content-grid {
+        width: calc(100% - 48px);
+    }
+}
+
+/* Mobil */
+@media (max-width: 760px) {
+
+    .wam-hero {
+        min-height: 420px;
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(3, 12, 27, 0.98),
+                rgba(5, 18, 39, 0.92)
+            );
+    }
+
+    .wam-hero-inner {
+        min-height: 420px;
+
+        padding:
+            54px 24px
+            84px;
+    }
+
+    .wam-hero h1 {
+        font-size: 36px;
+    }
+
+    .wam-stats,
+    .wam-content-grid {
+        width: calc(100% - 24px);
+    }
+}
+
+/* =========================================================
+   WAM AKADEMİ - HERO FINAL FIX V4
+   ========================================================= */
+
+/* Moodle layout dış boşluklarını tamamen kaldır */
+body.path-local-wamakademi #page-wrapper,
+body.path-local-wamakademi #page,
+body.path-local-wamakademi #page-content,
+body.path-local-wamakademi #region-main-box,
+body.path-local-wamakademi #region-main,
+body.path-local-wamakademi .main-inner,
+body.path-local-wamakademi .container-fluid {
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Navbar altındaki gereksiz beyaz üst boşluğu kaldır */
+body.path-local-wamakademi #page {
+    margin-top: 0 !important;
+}
+
+body.path-local-wamakademi #page-content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+body.path-local-wamakademi .main-inner {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Hero gerçekten tam genişlik */
+.wam-dashboard {
+    width: 100vw !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding: 0 0 60px !important;
+
+    position: relative;
+    left: 50%;
+    right: 50%;
+
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+}
+
+/* HERO */
+.wam-hero {
+    width: 100vw !important;
+    max-width: none !important;
+
+    min-height: 455px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border-radius: 0 !important;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 12, 27, 0.98) 0%,
+            rgba(4, 15, 32, 0.91) 30%,
+            rgba(5, 18, 39, 0.58) 48%,
+            rgba(5, 18, 39, 0.12) 66%,
+            rgba(5, 18, 39, 0.03) 100%
+        ),
+        url("/local/wamakademi/pix/wam-hero.png")
+        no-repeat
+        right center !important;
+
+    background-size:
+        100% 100%,
+        auto 100% !important;
+
+    background-color: #071425 !important;
+}
+
+/* Önceki mavi overlay görseli soldurmasın */
+.wam-hero::after {
+    background:
+        radial-gradient(
+            circle at 73% 50%,
+            rgba(44, 92, 255, 0.05),
+            transparent 34%
+        ) !important;
+}
+
+/* İçerik hizası */
+.wam-hero-inner {
+    width: 100%;
+    max-width: 1480px;
+
+    min-height: 455px;
+
+    margin: 0 auto;
+    padding: 72px 60px 96px;
+
+    box-sizing: border-box;
+}
+
+/* Sağdaki asıl görsel daha belirgin kalsın */
+.wam-hero {
+    background-blend-mode: normal !important;
+}
+
+/* KPI ve alt bölüm yine ortalı kalacak */
+.wam-stats,
+.wam-content-grid {
+    width: calc(100% - 120px);
+    max-width: 1480px;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* KPI hero üzerine binsin */
+.wam-stats {
+    margin-top: 0px !important;
+    margin-bottom: 38px !important;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+
+    .wam-hero-inner {
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    .wam-stats,
+    .wam-content-grid {
+        width: calc(100% - 48px);
+    }
+}
+
+/* Mobil */
+@media (max-width: 760px) {
+
+    .wam-dashboard {
+        width: 100% !important;
+        left: 0;
+        right: 0;
+
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .wam-hero {
+        width: 100% !important;
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(3, 12, 27, .98),
+                rgba(5, 18, 39, .94)
+            ) !important;
+    }
+
+    .wam-stats,
+    .wam-content-grid {
+        width: calc(100% - 24px);
+    }
+}
+
+/* =========================================================
+   WAM AKADEMİ - YATAY SCROLL FIX
+   ========================================================= */
+
+html,
+body {
+    overflow-x: hidden !important;
+}
+
+body.path-local-wamakademi .wam-dashboard {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    position: static !important;
+
+    left: auto !important;
+    right: auto !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+body.path-local-wamakademi .wam-hero {
+    width: calc(100% + 32px) !important;
+    max-width: none !important;
+
+    margin-left: -16px !important;
+    margin-right: -16px !important;
+
+    box-sizing: border-box !important;
+}
+
+/* =========================================================
+   WAM AKADEMİ - EĞİTİM KATALOĞU
+   ========================================================= */
+
+.wam-catalog-body #page-header {
+    display: none !important;
+}
+
+.wam-catalog-page {
+    width: 100%;
+    max-width: 1540px;
+    margin: 0 auto;
+    padding: 24px 28px 60px;
+    box-sizing: border-box;
+}
+
+/* HERO */
+
+.wam-catalog-hero {
+    min-height: 230px;
+    border-radius: 16px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    padding: 38px 70px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4, 14, 31, .98) 0%,
+            rgba(5, 18, 39, .84) 45%,
+            rgba(5, 18, 39, .20) 72%,
+            rgba(5, 18, 39, .05) 100%
+        ),
+        url("/local/wamakademi/pix/wam-hero.png")
+        no-repeat
+        right center;
+
+    background-size:
+        100% 100%,
+        auto 100%;
+}
+
+.wam-catalog-hero-content {
+    max-width: 730px;
+}
+
+.wam-catalog-hero h1 {
+    margin: 20px 0 12px;
+
+    color: #fff;
+    font-size: 38px;
+    line-height: 1.12;
+    font-weight: 800;
+}
+
+.wam-catalog-hero p {
+    margin: 0;
+
+    color: rgba(255,255,255,.86);
+    font-size: 17px;
+}
+
+/* TOOLBAR */
+
+.wam-catalog-toolbar {
+    display: grid;
+    grid-template-columns: 330px minmax(0, 1fr) 220px;
+    gap: 18px;
+    align-items: center;
+
+    margin: 24px auto 26px;
+    padding: 16px;
+
+    background: #fff;
+    border: 1px solid #e5e9f0;
+    border-radius: 15px;
+
+    box-shadow: 0 6px 20px rgba(15, 23, 42, .05);
+}
+
+.wam-catalog-search {
+    position: relative;
+}
+
+.wam-catalog-search span {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    color: #64748b;
+    font-size: 20px;
+}
+
+.wam-catalog-search input {
+    width: 100%;
+    height: 44px;
+
+    padding: 0 14px 0 42px;
+
+    border: 1px solid #dce3eb;
+    border-radius: 10px;
+
+    outline: none;
+    font-size: 14px;
+}
+
+.wam-catalog-search input:focus {
+    border-color: #5475ff;
+    box-shadow: 0 0 0 3px rgba(63, 99, 244, .08);
+}
+
+.wam-catalog-filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.wam-filter-button {
+    min-height: 42px;
+    padding: 0 17px;
+
+    border: 1px solid #dce3eb;
+    border-radius: 10px;
+
+    background: #fff;
+    color: #334155;
+
+    font-size: 14px;
+    font-weight: 650;
+
+    cursor: pointer;
+}
+
+.wam-filter-button:hover {
+    background: #f8fafc;
+}
+
+.wam-filter-button.active {
+    border-color: #4768ff;
+    color: #315cf4;
+    background: #f7f9ff;
+}
+
+.wam-catalog-sort select {
+    width: 100%;
+    height: 44px;
+
+    padding: 0 12px;
+
+    border: 1px solid #dce3eb;
+    border-radius: 10px;
+
+    background: #fff;
+    outline: none;
+}
+
+/* CONTENT */
+
+.wam-catalog-title {
+    margin-bottom: 18px;
+}
+
+.wam-catalog-title h2 {
+    margin: 0 0 4px;
+
+    color: #111827;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.wam-catalog-title p {
+    margin: 0;
+
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* GRID */
+
+.wam-catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.wam-catalog-card {
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #fff;
+    border: 1px solid #e5e9f0;
+    border-radius: 15px;
+
+    box-shadow: 0 4px 14px rgba(15, 23, 42, .045);
+}
+
+.wam-catalog-cover {
+    height: 175px;
+    overflow: hidden;
+
+    background: #f1f5f9;
+}
+
+.wam-catalog-cover img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.wam-catalog-card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    padding: 17px 18px 16px;
+}
+
+.wam-catalog-level {
+    display: inline-flex;
+    align-self: flex-start;
+
+    padding: 4px 9px;
+
+    border-radius: 999px;
+
+    font-size: 11px;
+    font-weight: 750;
+}
+
+.wam-catalog-level.basic {
+    background: #eef4ff;
+    color: #315cf4;
+}
+
+.wam-catalog-level.advanced {
+    background: #eef8ee;
+    color: #367742;
+}
+
+.wam-catalog-card h3 {
+    margin: 10px 0 8px;
+
+    min-height: 46px;
+
+    color: #111827;
+    font-size: 16px;
+    line-height: 1.35;
+    font-weight: 800;
+}
+
+.wam-catalog-description {
+    margin: 0 0 13px;
+
+    min-height: 42px;
+
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.wam-catalog-teacher {
+    margin-top: auto;
+    margin-bottom: 14px;
+
+    color: #475569;
+    font-size: 13px;
+}
+
+.wam-catalog-teacher strong {
+    color: #111827;
+}
+
+.wam-catalog-card-footer {
+    padding-top: 14px;
+
+    border-top: 1px solid #e9edf2;
+}
+
+.wam-catalog-card-footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #315cf4;
+    font-size: 14px;
+    font-weight: 750;
+
+    text-decoration: none !important;
+}
+
+.wam-catalog-card-footer a span {
+    font-size: 18px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1250px) {
+
+    .wam-catalog-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .wam-catalog-toolbar {
+        grid-template-columns: 1fr;
+    }
+
+    .wam-catalog-sort {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .wam-catalog-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .wam-catalog-hero {
+        padding: 34px;
+    }
+}
+
+@media (max-width: 620px) {
+
+    .wam-catalog-page {
+        padding: 14px 12px 40px;
+    }
+
+    .wam-catalog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wam-catalog-hero {
+        min-height: 250px;
+
+        padding: 28px 24px;
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(4, 14, 31, .98),
+                rgba(5, 18, 39, .94)
+            );
+    }
+
+    .wam-catalog-hero h1 {
+        font-size: 31px;
+    }
+}
+
+/* =========================================================
+   WAM KATALOG HERO - ÜST KESILME FIX
+   ========================================================= */
+
+body.path-local-wamakademi .wam-catalog-page {
+    padding-top: 34px !important;
+}
+
+body.path-local-wamakademi .wam-catalog-hero {
+    min-height: 260px !important;
+
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+
+    background-position:
+        center center,
+        right 54% !important;
+}
+
+body.path-local-wamakademi .wam-catalog-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+body.path-local-wamakademi .wam-catalog-hero h1 {
+    margin-top: 18px !important;
+}
+
+/* KATALOG HERO - NAVBAR ALT BOSLUK */
+
+body.path-local-wamakademi .wam-catalog-hero {
+    margin-top: 28px !important;
+}
+
+/* =========================================================
+   WAM AKADEMİ - TAKVİM V2
+   ========================================================= */
+
+.wam-calendar-body #page-header {
+    display: none !important;
+}
+
+.wam-calendar-v2-page {
+    width: 100%;
+    max-width: 1540px;
+
+    margin: 0 auto;
+    padding: 28px 28px 60px;
+
+    box-sizing: border-box;
+}
+
+
+/* HERO */
+
+.wam-calendar-v2-hero {
+    min-height: 220px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 42px 72px;
+
+    border-radius: 16px;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 13, 29, .98) 0%,
+            rgba(5, 18, 39, .90) 45%,
+            rgba(5, 18, 39, .30) 70%,
+            rgba(5, 18, 39, .05) 100%
+        ),
+        url("/local/wamakademi/pix/wam-hero.png")
+        no-repeat
+        right center;
+
+    background-size:
+        100% 100%,
+        auto 115%;
+}
+
+.wam-calendar-v2-hero-content {
+    max-width: 680px;
+}
+
+.wam-calendar-v2-badge {
+    display: inline-flex;
+
+    padding: 7px 13px;
+
+    border-radius: 999px;
+
+    background: rgba(58, 91, 233, .25);
+    color: #fff;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.wam-calendar-v2-hero h1 {
+    margin: 18px 0 10px;
+
+    color: #fff;
+
+    font-size: 37px;
+    line-height: 1.15;
+    font-weight: 800;
+}
+
+.wam-calendar-v2-hero p {
+    margin: 0;
+
+    color: rgba(255,255,255,.87);
+
+    font-size: 17px;
+}
+
+
+/* TOOLBAR */
+
+.wam-calendar-toolbar {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        auto
+        minmax(180px, 1fr);
+
+    align-items: center;
+    gap: 20px;
+
+    margin: 18px auto 16px;
+    padding: 13px;
+
+    background: #fff;
+
+    border: 1px solid #e5e9f0;
+    border-radius: 14px;
+
+    box-shadow: 0 6px 18px rgba(15,23,42,.05);
+}
+
+.wam-calendar-navigation {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+}
+
+.wam-calendar-navigation strong {
+    min-width: 165px;
+
+    color: #111827;
+
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.wam-calendar-arrow,
+.wam-calendar-today {
+    height: 42px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 15px;
+
+    background: #fff;
+
+    border: 1px solid #dce3eb;
+    border-radius: 9px;
+
+    color: #111827 !important;
+
+    text-decoration: none !important;
+}
+
+.wam-calendar-arrow {
+    width: 42px;
+    padding: 0;
+
+    font-size: 19px;
+}
+
+.wam-calendar-view-switch {
+    display: flex;
+
+    border: 1px solid #dce3eb;
+    border-radius: 9px;
+
+    overflow: hidden;
+}
+
+.wam-calendar-view-switch button {
+    min-width: 62px;
+    height: 42px;
+
+    border: 0;
+
+    background: #fff;
+
+    color: #334155;
+
+    cursor: pointer;
+}
+
+.wam-calendar-view-switch button.active {
+    background: #315cf4;
+    color: #fff;
+}
+
+.wam-calendar-catalog-button {
+    justify-self: end;
+
+    min-height: 44px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 22px;
+
+    background: #315cf4;
+    color: #fff !important;
+
+    border-radius: 9px;
+
+    font-weight: 700;
+
+    text-decoration: none !important;
+
+    box-shadow:
+        0 5px 15px
+        rgba(49,92,244,.20);
+}
+
+
+/* ANA GRID */
+
+.wam-calendar-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.55fr)
+        minmax(360px, 1fr);
+
+    gap: 16px;
+}
+
+
+/* TAKVİM */
+
+.wam-calendar-month-card,
+.wam-calendar-list-card,
+.wam-calendar-day-panel {
+    background: #fff;
+
+    border: 1px solid #e5e9f0;
+    border-radius: 14px;
+
+    box-shadow:
+        0 4px 14px
+        rgba(15,23,42,.04);
+}
+
+.wam-calendar-month-card {
+    padding: 12px;
+}
+
+.wam-calendar-weekdays {
+    display: grid;
+
+    grid-template-columns:
+        repeat(7, minmax(0, 1fr));
+
+    text-align: center;
+
+    color: #111827;
+
+    font-size: 13px;
+    font-weight: 750;
+}
+
+.wam-calendar-weekdays span {
+    padding: 10px 0;
+}
+
+.wam-calendar-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(7, minmax(0, 1fr));
+
+    border-top: 1px solid #e5e9f0;
+    border-left: 1px solid #e5e9f0;
+}
+
+.wam-calendar-day {
+    min-height: 106px;
+
+    padding: 9px 8px;
+
+    box-sizing: border-box;
+
+    border-right: 1px solid #e5e9f0;
+    border-bottom: 1px solid #e5e9f0;
+
+    background: #fff;
+
+    color: #111827 !important;
+
+    text-decoration: none !important;
+
+    overflow: hidden;
+}
+
+.wam-calendar-day:hover {
+    background: #f8faff;
+}
+
+.wam-calendar-day.empty:hover {
+    background: #fff;
+}
+
+.wam-calendar-day.today,
+.wam-calendar-day.selected {
+    background: #f2f6ff;
+}
+
+.wam-calendar-day-number {
+    display: block;
+
+    margin-bottom: 8px;
+
+    text-align: center;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.wam-calendar-day.today
+.wam-calendar-day-number {
+    color: #315cf4;
+    font-weight: 850;
+}
+
+.wam-calendar-day-events {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.wam-calendar-event {
+    display: block;
+
+    padding: 4px 6px;
+
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.wam-calendar-event.excel {
+    background: #e8f5e9;
+    color: #24703a;
+}
+
+.wam-calendar-event.powerpoint {
+    background: #fff0e9;
+    color: #c84625;
+}
+
+.wam-calendar-event.word {
+    background: #ebf1ff;
+    color: #3159be;
+}
+
+.wam-calendar-event.end {
+    opacity: .70;
+}
+
+.wam-calendar-legend {
+    display: flex;
+
+    gap: 26px;
+
+    padding: 14px 6px 4px;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+.wam-calendar-legend span {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.wam-calendar-legend i {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+}
+
+.wam-calendar-legend i.start {
+    background: #315cf4;
+}
+
+.wam-calendar-legend i.end {
+    background: #aeb8c8;
+}
+
+
+/* SAĞ PANEL */
+
+.wam-calendar-day-panel {
+    padding: 20px;
+}
+
+.wam-calendar-day-panel h2 {
+    margin: 0 0 6px;
+
+    font-size: 22px;
+    font-weight: 800;
+
+    color: #111827;
+}
+
+.wam-calendar-day-summary {
+    margin: 0 0 18px;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+.wam-calendar-day-courses {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.wam-calendar-day-course {
+    display: grid;
+
+    grid-template-columns:
+        52px minmax(0,1fr) auto;
+
+    align-items: center;
+    gap: 12px;
+
+    padding: 13px;
+
+    border: 1px solid #e7ebf1;
+    border-radius: 10px;
+}
+
+.wam-calendar-day-course img,
+.wam-calendar-course-fallback {
+    width: 52px;
+    height: 52px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+.wam-calendar-course-fallback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eef3ff;
+
+    color: #315cf4;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.wam-calendar-day-course h3 {
+    margin: 0 0 5px;
+
+    color: #111827;
+
+    font-size: 14px;
+    line-height: 1.3;
+
+    font-weight: 800;
+}
+
+.wam-calendar-day-course p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+.wam-calendar-day-course > a {
+    white-space: nowrap;
+
+    color: #315cf4;
+
+    font-size: 12px;
+    font-weight: 750;
+
+    text-decoration: none !important;
+}
+
+
+/* LİSTE */
+
+.wam-calendar-list-card {
+    padding: 18px;
+}
+
+.wam-calendar-list-item {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr)
+        auto
+        auto
+        auto;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 16px 10px;
+
+    border-bottom: 1px solid #e5e9f0;
+}
+
+.wam-calendar-list-item:last-child {
+    border-bottom: 0;
+}
+
+.wam-calendar-list-item span {
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+.wam-calendar-list-item a {
+    color: #315cf4;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-decoration: none !important;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+
+    .wam-calendar-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .wam-calendar-toolbar {
+        grid-template-columns: 1fr;
+    }
+
+    .wam-calendar-view-switch {
+        justify-self: start;
+    }
+
+    .wam-calendar-catalog-button {
+        justify-self: start;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .wam-calendar-v2-page {
+        padding:
+            18px 12px
+            40px;
+    }
+
+    .wam-calendar-v2-hero {
+        padding: 32px 24px;
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(3,13,29,.98),
+                rgba(5,18,39,.94)
+            );
+    }
+
+    .wam-calendar-v2-hero h1 {
+        font-size: 30px;
+    }
+
+    .wam-calendar-day {
+        min-height: 75px;
+        padding: 5px;
+    }
+
+    .wam-calendar-event {
+        font-size: 8px;
+    }
+}
+
+/* =========================================================
+   WAM TAKVİM - HERO VE BOYUT FINAL FIX
+   ========================================================= */
+
+/* Katalog sayfasındaki gibi hero navbar'dan biraz ayrılsın */
+body.path-local-wamakademi .wam-calendar-v2-hero {
+    margin-top: 28px !important;
+
+    min-height: 190px !important;
+
+    padding-top: 34px !important;
+    padding-bottom: 34px !important;
+}
+
+/* Hero içerik biraz daha kompakt */
+body.path-local-wamakademi .wam-calendar-v2-hero h1 {
+    font-size: 34px !important;
+    margin-top: 14px !important;
+    margin-bottom: 8px !important;
+}
+
+body.path-local-wamakademi .wam-calendar-v2-hero p {
+    font-size: 16px !important;
+}
+
+/* Toolbar biraz daha ince */
+body.path-local-wamakademi .wam-calendar-toolbar {
+    margin-top: 16px !important;
+    margin-bottom: 14px !important;
+
+    padding: 10px 12px !important;
+}
+
+/* Ana takvim alanını biraz daha kompakt yap */
+body.path-local-wamakademi .wam-calendar-layout {
+    gap: 14px !important;
+
+    grid-template-columns:
+        minmax(0, 1.65fr)
+        minmax(330px, .95fr) !important;
+}
+
+/* Takvim kutusunun iç boşluğunu azalt */
+body.path-local-wamakademi .wam-calendar-month-card {
+    padding: 8px !important;
+}
+
+/* Gün hücrelerini küçült */
+body.path-local-wamakademi .wam-calendar-day {
+    min-height: 82px !important;
+
+    padding: 6px 6px !important;
+}
+
+/* Gün numaraları biraz sıkı */
+body.path-local-wamakademi .wam-calendar-day-number {
+    margin-bottom: 5px !important;
+
+    font-size: 12px !important;
+}
+
+/* Event etiketleri küçülsün */
+body.path-local-wamakademi .wam-calendar-event {
+    padding: 3px 5px !important;
+
+    font-size: 9px !important;
+}
+
+/* Sağ panel biraz daha kompakt */
+body.path-local-wamakademi .wam-calendar-day-panel {
+    padding: 16px !important;
+}
+
+/* Sağ panel başlığı küçülsün */
+body.path-local-wamakademi .wam-calendar-day-panel h2 {
+    font-size: 20px !important;
+    margin-bottom: 4px !important;
+}
+
+body.path-local-wamakademi .wam-calendar-day-summary {
+    margin-bottom: 14px !important;
+    font-size: 13px !important;
+}
+
+/* Sağdaki eğitim kartlarını da biraz küçült */
+body.path-local-wamakademi .wam-calendar-day-course {
+    grid-template-columns:
+        46px minmax(0, 1fr) auto !important;
+
+    gap: 10px !important;
+
+    padding: 10px !important;
+}
+
+body.path-local-wamakademi .wam-calendar-day-course img,
+body.path-local-wamakademi .wam-calendar-course-fallback {
+    width: 46px !important;
+    height: 46px !important;
+}
+
+body.path-local-wamakademi .wam-calendar-day-course h3 {
+    font-size: 13px !important;
+    margin-bottom: 3px !important;
+}
+
+body.path-local-wamakademi .wam-calendar-day-course p {
+    font-size: 10px !important;
+}
+
+/* TAKVIM HERO - BIRAZ DAHA ASAGI */
+
+body.path-local-wamakademi .wam-calendar-v2-hero {
+    margin-top: 46px !important;
+}
+
+/* =========================================================
+   TAKVIM - BASLANGIC / BITIS AYRIMI
+   ========================================================= */
+
+body.path-local-wamakademi .wam-calendar-event.start {
+    border-left: 3px solid #315cf4 !important;
+    padding-left: 7px !important;
+}
+
+body.path-local-wamakademi .wam-calendar-event.start::before {
+    content: "● ";
+    color: #315cf4;
+    font-size: 8px;
+    margin-right: 2px;
+}
+
+body.path-local-wamakademi .wam-calendar-event.end {
+    background: #eef1f5 !important;
+    color: #64748b !important;
+    border-left: 3px solid #aeb8c8 !important;
+    padding-left: 7px !important;
+    opacity: 1 !important;
+}
+
+body.path-local-wamakademi .wam-calendar-event.end::before {
+    content: "✓ ";
+    color: #7b8798;
+    font-weight: 900;
+    margin-right: 2px;
+}
+
+
+/* =========================================================
+   WAM NAVBAR - AKTIF SAYFA
+   ========================================================= */
+
+body.wam-catalog-body .wam-top-nav .wam-nav-catalog,
+body.wam-my-courses-body .wam-top-nav .wam-nav-mycourses,
+body.wam-calendar-body .wam-top-nav .wam-nav-calendar {
+    color: #315cf4 !important;
+    font-weight: 700 !important;
+    position: relative;
+}
+
+body.wam-catalog-body .wam-top-nav .wam-nav-catalog::after,
+body.wam-my-courses-body .wam-top-nav .wam-nav-mycourses::after,
+body.wam-calendar-body .wam-top-nav .wam-nav-calendar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    height: 3px;
+    background: #315cf4;
+    border-radius: 999px;
+}
+
+/* =========================================================
+   KATALOG + EGITIMLERIM HERO - BUTUNLESIK ARKA PLAN
+   ========================================================= */
+
+body.wam-catalog-body .wam-catalog-hero {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            #081426 0%,
+            #111f33 28%,
+            rgba(17, 31, 51, 0.92) 48%,
+            rgba(8, 20, 38, 0.58) 66%,
+            rgba(4, 12, 28, 0.20) 82%,
+            rgba(4, 12, 28, 0.05) 100%
+        ),
+        url("/local/wamakademi/pix/wam-hero.png")
+        right center / auto 100%
+        no-repeat !important;
+}
+
+/* Görsel ile sol içerik arasında sert sınır kalmasın */
+body.wam-catalog-body .wam-catalog-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8,20,38,0) 0%,
+            rgba(8,20,38,0) 42%,
+            rgba(8,20,38,0.12) 55%,
+            rgba(8,20,38,0.04) 72%,
+            rgba(8,20,38,0) 100%
+        );
+}
+
+/* Yazılar her zaman görselin üstünde */
+body.wam-catalog-body .wam-catalog-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 58%;
+}
+
+/* Küçük ekran */
+@media (max-width: 900px) {
+
+    body.wam-catalog-body .wam-catalog-hero {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(8,20,38,0.97) 0%,
+                rgba(8,20,38,0.90) 65%,
+                rgba(8,20,38,0.68) 100%
+            ),
+            url("/local/wamakademi/pix/wam-hero.png")
+            right center / cover
+            no-repeat !important;
+    }
+
+    body.wam-catalog-body .wam-catalog-hero-content {
+        max-width: 100%;
+    }
+}
+
+
+/* =========================================================
+   KATALOG + EGITIMLERIM HERO - ANA SAYFA GIBI TEK PARCA
+   ========================================================= */
+
+body.wam-catalog-body .wam-catalog-hero {
+    position: relative !important;
+    overflow: hidden !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 12, 27, 0.98) 0%,
+            rgba(3, 12, 27, 0.93) 28%,
+            rgba(3, 12, 27, 0.78) 48%,
+            rgba(3, 12, 27, 0.42) 68%,
+            rgba(3, 12, 27, 0.10) 100%
+        ),
+        url("/local/wamakademi/pix/wam-hero.png")
+        center center / cover
+        no-repeat !important;
+
+    background-blend-mode: normal !important;
+}
+
+body.wam-catalog-body .wam-catalog-hero::after {
+    display: none !important;
+}
+
+body.wam-catalog-body .wam-catalog-hero-content {
+    position: relative !important;
+    z-index: 2 !important;
+    max-width: 58% !important;
+}
+
+@media (min-width: 1200px) {
+    body.wam-catalog-body .wam-catalog-hero {
+        background-position: center 43% !important;
+    }
+}
+
+
+/* =========================================================
+   KATALOG + EGITIMLERIM HERO - GORSEL CANLILIK FIX
+   ========================================================= */
+
+body.wam-catalog-body .wam-catalog-hero {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 12, 27, 0.97) 0%,
+            rgba(3, 12, 27, 0.90) 24%,
+            rgba(3, 12, 27, 0.62) 42%,
+            rgba(3, 12, 27, 0.25) 58%,
+            rgba(3, 12, 27, 0.04) 76%,
+            rgba(3, 12, 27, 0.00) 100%
+        ),
+        url("/local/wamakademi/pix/wam-hero.png")
+        center 43% / cover
+        no-repeat !important;
+}
+
+
+/* =========================================================
+   WAM DESIGN TOKENS
+   ========================================================= */
+
+:root {
+    --wam-bg: #F5F3EE;
+    --wam-ink: #19221F;
+    --wam-ink-muted: #4A5551;
+    --wam-primary: #215B4A;
+    --wam-primary-soft: #E7F0EC;
+    --wam-secondary: #E1BC86;
+    --wam-secondary-ink: #19221F;
+    --wam-surface: #FFFFFF;
+    --wam-border: #D9D4C8;
+    --wam-ok: #215B4A;
+    --wam-ok-soft: #E7F0EC;
+    --wam-warn-soft: #F6EBD7;
+    --wam-radius: 14px;
+    --wam-radius-sm: 10px;
+    --wam-space-1: 0.25rem;
+    --wam-space-2: 0.5rem;
+    --wam-space-3: 0.75rem;
+    --wam-space-4: 1rem;
+    --wam-space-5: 1.5rem;
+    --wam-space-6: 2rem;
+    --wam-space-7: 3rem;
+    --wam-font: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    --wam-shadow: 0 8px 24px rgba(25, 34, 31, 0.08);
+    --wam-focus: 0 0 0 3px rgba(33, 91, 74, 0.28);
+}
+
+/* =========================================================
+   WAM EĞİTİMLERİM (.wam-ed) — scoped screen styles
+   ========================================================= */
+
+body.wam-my-courses-body {
+    background: var(--wam-bg);
+}
+
+body.wam-my-courses-body #page,
+body.wam-my-courses-body #page-content,
+body.wam-my-courses-body #region-main,
+body.wam-my-courses-body .main-inner {
+    background: transparent;
+}
+
+.wam-ed {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: var(--wam-space-5) var(--wam-space-4) var(--wam-space-7);
+    color: var(--wam-ink);
+    font-family: var(--wam-font);
+}
+
+.wam-ed *,
+.wam-ed *::before,
+.wam-ed *::after {
+    box-sizing: border-box;
+}
+
+.wam-ed__header {
+    margin-bottom: var(--wam-space-5);
+}
+
+.wam-ed__title {
+    margin: 0 0 var(--wam-space-2);
+    font-size: clamp(1.75rem, 2vw + 1rem, 2.25rem);
+    font-weight: 750;
+    line-height: 1.15;
+    color: var(--wam-ink);
+}
+
+.wam-ed__lead {
+    margin: 0;
+    max-width: 40rem;
+    color: var(--wam-ink-muted);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.wam-ed__continue {
+    display: flex;
+    flex-direction: column;
+    gap: var(--wam-space-4);
+    margin-bottom: var(--wam-space-5);
+    padding: var(--wam-space-5);
+    border: 1px solid color-mix(in srgb, var(--wam-primary) 35%, var(--wam-border));
+    border-radius: var(--wam-radius);
+    background:
+        linear-gradient(135deg, color-mix(in srgb, var(--wam-primary) 92%, #000) 0%, var(--wam-primary) 55%, color-mix(in srgb, var(--wam-primary) 75%, #163A30) 100%);
+    color: #F5F3EE;
+    box-shadow: var(--wam-shadow);
+}
+
+.wam-ed__continue--empty {
+    background: var(--wam-surface);
+    color: var(--wam-ink);
+    border-color: var(--wam-border);
+}
+
+.wam-ed__continue-eyebrow {
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: var(--wam-secondary);
+    color: var(--wam-secondary-ink);
+    font-size: 0.72rem;
+    font-weight: 750;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.wam-ed__continue-title {
+    margin: 0;
+    font-size: clamp(1.25rem, 1vw + 1rem, 1.65rem);
+    font-weight: 750;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+}
+
+.wam-ed__continue-meta {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 0.95rem;
+}
+
+.wam-ed__continue--empty .wam-ed__continue-meta {
+    color: var(--wam-ink-muted);
+    opacity: 1;
+}
+
+.wam-ed__continue-progress {
+    display: flex;
+    align-items: center;
+    gap: var(--wam-space-3);
+    max-width: 28rem;
+}
+
+.wam-ed__continue-pct {
+    min-width: 2.75rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.wam-ed__bar {
+    flex: 1;
+    height: 0.5rem;
+    overflow: hidden;
+    border-radius: 999px;
+    background: rgba(245, 243, 238, 0.28);
+}
+
+.wam-ed__continue--empty .wam-ed__bar,
+.wam-ed__card .wam-ed__bar {
+    background: #E7E2D8;
+}
+
+.wam-ed__bar-value {
+    height: 100%;
+    min-width: 0;
+    border-radius: inherit;
+    background: var(--wam-secondary);
+}
+
+.wam-ed__card .wam-ed__bar-value {
+    background: var(--wam-primary);
+}
+
+.wam-ed__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    align-self: flex-start;
+    min-height: 2.75rem;
+    padding: 0 1.15rem;
+    border-radius: var(--wam-radius-sm);
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.wam-ed__btn--primary {
+    background: var(--wam-secondary);
+    color: var(--wam-secondary-ink);
+}
+
+.wam-ed__btn--secondary {
+    background: var(--wam-primary-soft);
+    color: var(--wam-primary);
+}
+
+.wam-ed__btn:hover {
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+
+.wam-ed__btn:focus-visible,
+.wam-ed__filter:focus-visible,
+.wam-ed__search-input:focus-visible,
+.wam-ed__link:focus-visible {
+    outline: none;
+    box-shadow: var(--wam-focus);
+}
+
+.wam-ed__toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--wam-space-3);
+    margin-bottom: var(--wam-space-4);
+}
+
+.wam-ed__filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--wam-space-2);
+}
+
+.wam-ed__filter {
+    appearance: none;
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--wam-ink-muted);
+    min-height: 2.5rem;
+    padding: 0 0.9rem;
+    border-radius: 999px;
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 650;
+    cursor: pointer;
+}
+
+.wam-ed__filter.is-active,
+.wam-ed__filter[aria-pressed="true"] {
+    background: var(--wam-ink);
+    color: #F5F3EE;
+}
+
+.wam-ed__search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-width: min(100%, 16rem);
+    flex: 1 1 14rem;
+    max-width: 22rem;
+}
+
+.wam-ed__search-icon {
+    position: absolute;
+    left: 0.85rem;
+    color: var(--wam-ink-muted);
+    pointer-events: none;
+}
+
+.wam-ed__search-input {
+    width: 100%;
+    min-height: 2.5rem;
+    padding: 0 0.9rem 0 2.2rem;
+    border: 1px solid var(--wam-border);
+    border-radius: 999px;
+    background: var(--wam-surface);
+    color: var(--wam-ink);
+    font: inherit;
+    font-size: 0.9rem;
+}
+
+.wam-ed__search-input::placeholder {
+    color: color-mix(in srgb, var(--wam-ink-muted) 80%, #fff);
+}
+
+.wam-ed__statusline {
+    margin-bottom: var(--wam-space-3);
+    color: var(--wam-ink-muted);
+    font-size: 0.9rem;
+}
+
+.wam-ed__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 17.5rem), 1fr));
+    gap: var(--wam-space-4);
+    align-items: stretch;
+}
+
+.wam-ed__card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+    background: var(--wam-surface);
+    border: 1px solid var(--wam-border);
+    border-radius: var(--wam-radius);
+    box-shadow: var(--wam-shadow);
+}
+
+.wam-ed__card[hidden] {
+    display: none !important;
+}
+
+.wam-ed__cover {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    overflow: hidden;
+    background: color-mix(in srgb, var(--wam-primary) 18%, var(--wam-bg));
+}
+
+.wam-ed__cover-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wam-ed__cover-fallback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: var(--wam-primary);
+    font-size: 1.75rem;
+    font-weight: 750;
+    letter-spacing: 0.04em;
+}
+
+.wam-ed__card-body {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    gap: var(--wam-space-3);
+    padding: var(--wam-space-4);
+    min-width: 0;
+}
+
+.wam-ed__card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--wam-space-2);
+}
+
+.wam-ed__category {
+    color: var(--wam-ink-muted);
+    font-size: 0.72rem;
+    font-weight: 750;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.wam-ed__badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.wam-ed__badge--active {
+    background: var(--wam-ok-soft);
+    color: var(--wam-ok);
+}
+
+.wam-ed__badge--assigned {
+    background: var(--wam-warn-soft);
+    color: var(--wam-ink);
+}
+
+.wam-ed__badge--completed {
+    background: color-mix(in srgb, var(--wam-primary) 16%, #fff);
+    color: var(--wam-primary);
+}
+
+.wam-ed__card-title {
+    margin: 0;
+    min-height: 2.6em;
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+}
+
+.wam-ed__card-stats {
+    margin: 0;
+    color: var(--wam-ink-muted);
+    font-size: 0.875rem;
+}
+
+.wam-ed__card-progress {
+    display: flex;
+    align-items: center;
+    gap: var(--wam-space-2);
+}
+
+.wam-ed__pct {
+    min-width: 2.5rem;
+    color: var(--wam-ink);
+    font-size: 0.8rem;
+    font-weight: 750;
+    text-align: right;
+}
+
+.wam-ed__card-footer {
+    margin-top: auto;
+    padding-top: var(--wam-space-2);
+}
+
+.wam-ed__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--wam-primary);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.wam-ed__link:hover {
+    text-decoration: underline;
+}
+
+.wam-ed__empty {
+    padding: var(--wam-space-7) var(--wam-space-5);
+    text-align: center;
+    background: var(--wam-surface);
+    border: 1px solid var(--wam-border);
+    border-radius: var(--wam-radius);
+}
+
+.wam-ed__empty-title {
+    margin: 0 0 var(--wam-space-2);
+    font-size: 1.25rem;
+    color: var(--wam-ink);
+}
+
+.wam-ed__empty-text {
+    margin: 0 0 var(--wam-space-5);
+    color: var(--wam-ink-muted);
+}
+
+.wam-ed__empty--filter {
+    margin-top: var(--wam-space-4);
+}
+
+.wam-ed__empty--filter[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 767.98px) {
+    .wam-ed {
+        padding: var(--wam-space-4) var(--wam-space-3) var(--wam-space-6);
+    }
+
+    .wam-ed__toolbar {
+        align-items: stretch;
+    }
+
+    .wam-ed__search {
+        max-width: none;
+        flex-basis: 100%;
+    }
+
+    .wam-ed__filters {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .wam-ed__btn,
+    .wam-ed__filter {
+        transition: none;
+    }
+
+    .wam-ed__btn:hover {
+        transform: none;
+    }
+}
+
+/* =========================================================
+   WAM ortak menü + Ayarlar çarkı + kurs detayı + odak
+   ========================================================= */
+
+.wam-hide-bootstrap-toggler {
+    display: none !important;
+}
+
+.wam-menu-toggle {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    display: inline-flex !important;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+}
+
+.wam-menu-toggle:focus:not(:focus-visible),
+.wam-gear__btn:focus:not(:focus-visible),
+.wam-menu-close:focus:not(:focus-visible),
+.wam-menu-panel__nav a:focus:not(:focus-visible),
+.wam-gear__menu a:focus:not(:focus-visible),
+.navbar a:focus:not(:focus-visible),
+.navbar button:focus:not(:focus-visible) {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.wam-menu-toggle:focus-visible,
+.wam-gear__btn:focus-visible,
+.wam-menu-close:focus-visible,
+.wam-menu-panel__nav a:focus-visible,
+.wam-gear__menu a:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+.wam-menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.35);
+    z-index: 1050;
+}
+
+.wam-menu-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: min(300px, 88vw);
+    height: 100vh;
+    background: #ffffff;
+    border-right: 1px solid #e5e7eb;
+    z-index: 1051;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 8px 0 24px rgba(15, 23, 42, 0.08);
+    transform: translateX(0);
+}
+
+.wam-menu-panel[hidden],
+.wam-menu-overlay[hidden] {
+    display: none !important;
+}
+
+.wam-menu-panel__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 18px 12px;
+    border-bottom: 1px solid #eef2f7;
+}
+
+.wam-menu-panel__brand {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    color: #111827;
+}
+
+.wam-menu-close {
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 8px;
+    background: #f3f4f6;
+    color: #111827;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.wam-menu-panel__nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 2px;
+}
+
+.wam-menu-panel__nav a {
+    display: block;
+    padding: 12px 14px;
+    border-radius: 10px;
+    color: #111827;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.wam-menu-panel__nav a:hover {
+    background: #f3f4f6;
+}
+
+.wam-menu-panel__nav a.is-active,
+.wam-menu-panel__nav a[aria-current="page"] {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+/* Menü off-canvas: açıkken içerik genişliği değişmez */
+body.wam-menu-open {
+    overflow: hidden;
+}
+
+.wam-gear {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+}
+
+.wam-gear__btn {
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    color: #334155;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.wam-gear__btn:hover {
+    background: #f3f4f6;
+}
+
+.wam-gear__menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    min-width: 200px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+    padding: 6px;
+    z-index: 1060;
+}
+
+.wam-gear__menu[hidden] {
+    display: none !important;
+}
+
+.wam-gear__menu a {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: #111827;
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 600;
+}
+
+.wam-gear__menu a:hover {
+    background: #f3f4f6;
+}
+
+/* Kurs detayı sadeleştirme */
+body[id^="page-course-view-"] #page-header .page-header-headings h1,
+body.wam-course-view #page-header .page-header-headings h1 {
+    font-size: 1.55rem !important;
+    line-height: 1.25 !important;
+    font-weight: 700 !important;
+}
+
+body[id^="page-course-view-"] .sectionname,
+body.wam-course-view .sectionname {
+    font-size: 1rem !important;
+    font-weight: 650 !important;
+}
+
+body[id^="page-course-view-"] .activity-item,
+body.wam-course-view .activity-item {
+    padding-top: 0.45rem !important;
+    padding-bottom: 0.45rem !important;
+}
+
+body[id^="page-course-view-"] .activity-item .instancename,
+body[id^="page-course-view-"] .activity-item .aalink,
+body.wam-course-view .activity-item .instancename,
+body.wam-course-view .activity-item .aalink {
+    font-size: 0.92rem !important;
+    font-weight: 550 !important;
+    line-height: 1.35 !important;
+    text-transform: none !important;
+}
+
+body[id^="page-course-view-"] .modtype_resource .activityiconcontainer,
+body[id^="page-course-view-"] .modtype_resource .activity-icon,
+body[id^="page-course-view-"] .modtype_resource .activitybadge,
+body.wam-course-view .modtype_resource .activityiconcontainer,
+body.wam-course-view .modtype_resource .activity-icon,
+body.wam-course-view .modtype_resource .activitybadge {
+    display: none !important;
+}

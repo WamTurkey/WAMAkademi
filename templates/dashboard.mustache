@@ -1,0 +1,321 @@
+<div class="wam-dashboard">
+
+<section class="wam-hero">
+
+    <div class="wam-hero-inner">
+
+        <div class="wam-hero-content">
+
+            <span class="wam-hero-badge">
+                WAM AKADEMİ
+            </span>
+
+            <h1>
+                Geleceğe Birlikte<br>
+                Hazırlanıyoruz
+            </h1>
+
+            <p>
+                WAM Akademi ile öğren, geliş ve fark yarat.
+            </p>
+
+            <div class="wam-hero-actions">
+
+                <a href="{{config.wwwroot}}/local/wamakademi/catalog.php"
+                   class="wam-hero-button primary">
+                    Eğitimleri Keşfet →
+                </a>
+
+		<a href="{{herocontinueurl}}"
+   		   class="wam-hero-button secondary">
+    		   Kaldığın Yerden Devam Et
+		</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <section class="wam-stats">
+
+        <div class="wam-stat-card">
+            <div class="wam-stat-icon">▶</div>
+
+            <div>
+                <span>Devam Eden</span>
+                <strong>{{ongoingcount}}</strong>
+            </div>
+        </div>
+
+
+        <div class="wam-stat-card">
+            <div class="wam-stat-icon">✓</div>
+
+            <div>
+                <span>Tamamlanan</span>
+                <strong>{{completedcount}}</strong>
+            </div>
+        </div>
+
+
+        <div class="wam-stat-card">
+            <div class="wam-stat-icon">★</div>
+
+            <div>
+                <span>Sertifikalarım</span>
+                <strong>{{certificatecount}}</strong>
+            </div>
+        </div>
+
+
+        <div class="wam-stat-card">
+            <div class="wam-stat-icon">◷</div>
+
+            <div>
+                <span>Toplam Öğrenme</span>
+                <strong>{{learninghours}} saat</strong>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="wam-content-grid">
+
+        <main class="wam-main-content">
+
+            <section class="wam-section">
+
+                <div class="wam-section-header">
+
+                    <h3>Eğitimlerim</h3>
+
+                    <a href="{{config.wwwroot}}/my/courses.php">
+                        Tümünü Gör →
+                    </a>
+
+                </div>
+
+
+                <div class="wam-course-grid">
+
+                    {{#hascourses}}
+
+                        {{#courses}}
+
+                            <article class="wam-course-card">
+
+<div class="wam-course-cover">
+
+    {{#hascourseimage}}
+
+        <img src="{{courseimage}}"
+             alt="{{fullname}}"
+             class="wam-course-image">
+
+    {{/hascourseimage}}
+
+    {{^hascourseimage}}
+
+        <div class="wam-course-fallback">
+            {{shortname}}
+        </div>
+
+    {{/hascourseimage}}
+
+</div>
+                                <div class="wam-course-info">
+
+                                    <span class="wam-course-category">
+                                        {{category}}
+                                    </span>
+
+
+                                    <h4>
+                                        {{fullname}}
+                                    </h4>
+
+
+                                    <div class="wam-progress-header">
+
+                                        <span>İlerleme</span>
+
+                                        <strong>
+                                            {{progress}}%
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="wam-progress">
+
+                                        <div class="wam-progress-value"
+                                             style="width: {{progress}}%;">
+                                        </div>
+
+                                    </div>
+
+
+                                    {{#iscompleted}}
+
+                                        <span class="wam-course-button">
+                                            Tamamlandı ✓
+                                        </span>
+
+                                    {{/iscompleted}}
+
+
+                                    {{^iscompleted}}
+
+                                        <a href="{{continueurl}}"
+                                           class="wam-course-button">
+                                            Devam Et →
+                                        </a>
+
+                                    {{/iscompleted}}
+
+                                </div>
+
+                            </article>
+
+                        {{/courses}}
+
+                    {{/hascourses}}
+
+
+                    {{^hascourses}}
+
+                        <div class="wam-empty-state">
+
+                            Henüz atanmış bir eğitiminiz bulunmuyor.
+
+                        </div>
+
+                    {{/hascourses}}
+
+                </div>
+
+            </section>
+
+
+		<section class="wam-section" id="wam-my-courses">
+                <div class="wam-section-header">
+
+                    <h3>Önerilen Eğitimler</h3>
+
+                    <a href="#">
+                        Tümünü Gör →
+                    </a>
+
+                </div>
+
+
+                <div class="wam-recommended-grid">
+
+                    <div class="wam-recommended-card">
+
+                        <span>Ofis Programları</span>
+
+                        <strong>
+                            Excel İleri Düzey
+                        </strong>
+
+                    </div>
+
+
+                    <div class="wam-recommended-card">
+
+                        <span>Bilgi Teknolojileri</span>
+
+                        <strong>
+                            Bilgi Güvenliği Temelleri
+                        </strong>
+
+                    </div>
+
+
+                    <div class="wam-recommended-card">
+
+                        <span>Kişisel Gelişim</span>
+
+                        <strong>
+                            Etkili İletişim Teknikleri
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <aside class="wam-sidebar">
+
+            <div class="wam-section-header">
+
+                <h3>Yaklaşanlar</h3>
+
+                <a href="{{config.wwwroot}}/calendar/view.php">
+                    Takvim →
+                </a>
+
+            </div>
+
+
+            <div class="wam-upcoming-item">
+
+                <div class="wam-date">
+
+                    <strong>28</strong>
+
+                    <span>AĞU</span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Excel Seviye Tespit Sınavı
+                    </strong>
+
+                    <span>Sınav</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="wam-upcoming-item">
+
+                <div class="wam-date">
+
+                    <strong>02</strong>
+
+                    <span>EYL</span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Bilgi Güvenliği Eğitimi
+                    </strong>
+
+                    <span>Eğitim</span>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</div>

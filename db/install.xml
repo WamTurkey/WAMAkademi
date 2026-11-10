@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/wamakademi/db"
+       VERSION="2026082600"
+       COMMENT="XMLDB file for local_wamakademi">
+
+    <TABLES>
+
+        <TABLE NAME="local_wamakademi_progress"
+               COMMENT="Stores per-user video progress for WAM Akademi">
+
+            <FIELDS>
+
+                <FIELD NAME="id"
+                       TYPE="int"
+                       LENGTH="10"
+                       NOTNULL="true"
+                       SEQUENCE="true"/>
+
+                <FIELD NAME="userid"
+                       TYPE="int"
+                       LENGTH="10"
+                       NOTNULL="true"
+                       SEQUENCE="false"/>
+
+                <FIELD NAME="cmid"
+                       TYPE="int"
+                       LENGTH="10"
+                       NOTNULL="true"
+                       SEQUENCE="false"/>
+
+                <FIELD NAME="currenttime"
+                       TYPE="number"
+                       LENGTH="10,2"
+                       NOTNULL="true"
+                       DEFAULT="0"
+                       SEQUENCE="false"/>
+
+                <FIELD NAME="duration"
+                       TYPE="number"
+                       LENGTH="10,2"
+                       NOTNULL="true"
+                       DEFAULT="0"
+                       SEQUENCE="false"/>
+
+                <FIELD NAME="progress"
+                       TYPE="int"
+                       LENGTH="3"
+                       NOTNULL="true"
+                       DEFAULT="0"
+                       SEQUENCE="false"/>
+
+                <FIELD NAME="completed"
+                       TYPE="int"
+                       LENGTH="1"
+                       NOTNULL="true"
+                       DEFAULT="0"
+                       SEQUENCE="false"/>
+
+		<FIELD NAME="timecreated"
+       		TYPE="int"
+       		LENGTH="10"
+       		NOTNULL="true"
+       		DEFAULT="0"
+       		SEQUENCE="false"/>
+
+		<FIELD NAME="timecompleted"
+       		TYPE="int"
+       		LENGTH="10"
+       		NOTNULL="true"
+       		DEFAULT="0"
+       		SEQUENCE="false"/>
+
+                <FIELD NAME="timemodified"
+                       TYPE="int"
+                       LENGTH="10"
+                       NOTNULL="true"
+                       DEFAULT="0"
+                       SEQUENCE="false"/>
+
+            </FIELDS>
+
+            <KEYS>
+                <KEY NAME="primary"
+                     TYPE="primary"
+                     FIELDS="id"/>
+            </KEYS>
+
+            <INDEXES>
+
+                <INDEX NAME="userid_cmid_uix"
+                       UNIQUE="true"
+                       FIELDS="userid,cmid"/>
+
+            </INDEXES>
+
+        </TABLE>
+
+    </TABLES>
+
+</XMLDB>

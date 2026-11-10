@@ -1,0 +1,10 @@
+*.bak
+*.bak-*
+*.save
+*.swp
+*~
+.DS_Store
+config.php
+config.php.backup
+js/.deploy-uc-ekran/
+js/.patch/

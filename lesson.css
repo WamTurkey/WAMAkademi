@@ -1,0 +1,318 @@
+/* WAM Akademi — Ders oynatıcı (video odaklı, beyaz yüzey) */
+
+body.wam-lesson-page {
+    --wam-lp-blue: #2563eb;
+    --wam-lp-blue-soft: #dbeafe;
+    --wam-lp-line: #e5e7eb;
+    --wam-lp-text: #111827;
+    --wam-lp-muted: #6b7280;
+    --wam-lp-bg: #f8fafc;
+    background: var(--wam-lp-bg);
+    color: var(--wam-lp-text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+}
+
+body.wam-lesson-page .drawer,
+body.wam-lesson-page .drawer-toggles,
+body.wam-lesson-page .drawer-toggler,
+body.wam-lesson-page [data-region="drawer"],
+body.wam-lesson-page .courseindex,
+body.wam-lesson-page .courseindex-drawer,
+body.wam-lesson-page #courseindexdrawer,
+body.wam-lesson-page #page-footer,
+body.wam-lesson-page .activity-navigation,
+body.wam-lesson-page .secondary-navigation,
+body.wam-lesson-page.path-mod-resource .activity-header,
+body.wam-lesson-page .activity-header,
+body.wam-lesson-page #region-main > .activity-description,
+body.wam-lesson-page .page-context-header,
+body.wam-lesson-page .activity-information,
+body.wam-lesson-page .activitybadge {
+    display: none !important;
+}
+
+body.wam-lesson-page #page {
+    margin-top: 0 !important;
+}
+
+body.wam-lesson-page #region-main {
+    padding: 0 !important;
+    background: transparent;
+}
+
+body.wam-lesson-page #region-main-box,
+body.wam-lesson-page .main-inner {
+    max-width: none !important;
+    padding: 0 !important;
+}
+
+.wam-lp {
+    width: 100%;
+}
+
+.wam-lp__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 360px;
+    gap: 0;
+    min-height: calc(100vh - 60px);
+    background: #fff;
+}
+
+.wam-lp__main {
+    min-width: 0;
+    padding: 20px 28px 32px;
+    border-right: 1px solid var(--wam-lp-line);
+}
+
+.wam-lp__header {
+    margin-bottom: 14px;
+}
+
+.wam-lp__crumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    font-size: 12px;
+    color: var(--wam-lp-muted);
+    margin-bottom: 6px;
+}
+
+.wam-lp__crumb a {
+    color: var(--wam-lp-muted);
+    text-decoration: none;
+}
+
+.wam-lp__crumb a:hover {
+    color: var(--wam-lp-blue);
+}
+
+.wam-lp__title {
+    margin: 0;
+    font-size: 22px;
+    line-height: 1.25;
+    font-weight: 650;
+    letter-spacing: -0.02em;
+}
+
+.wam-lp__video {
+    background: #0f172a;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--wam-lp-line);
+}
+
+.wam-lp__video .mediaplugin,
+.wam-lp__video .mediaplugin_videojs,
+.wam-lp__video .video-js {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+    background: #0f172a;
+}
+
+.wam-lp__video .video-js .vjs-tech,
+.wam-lp__video video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    background: #0f172a;
+}
+
+.wam-lp__pptx {
+    display: block;
+    width: 100%;
+    min-height: 520px;
+    border: 0;
+    background: #fff;
+}
+
+.wam-lp__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.wam-lp__prev,
+.wam-lp__next {
+    border: 1px solid var(--wam-lp-line);
+    background: #fff;
+    color: var(--wam-lp-text);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.wam-lp__next {
+    background: var(--wam-lp-blue);
+    border-color: var(--wam-lp-blue);
+    color: #fff;
+}
+
+.wam-lp__prev:disabled,
+.wam-lp__next:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.wam-lp__prev:focus-visible,
+.wam-lp__next:focus-visible,
+.wam-lp-item:focus-visible {
+    outline: 2px solid var(--wam-lp-blue);
+    outline-offset: 2px;
+}
+
+.wam-lp__prev:focus:not(:focus-visible),
+.wam-lp__next:focus:not(:focus-visible),
+.wam-lp-item:focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none;
+}
+
+.wam-lp__side {
+    background: #fff;
+    padding: 18px 0 24px;
+    overflow: auto;
+}
+
+.wam-lp__side-head {
+    padding: 0 20px 14px;
+    border-bottom: 1px solid var(--wam-lp-line);
+}
+
+.wam-lp__side-head h2 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.wam-lp__side-head p {
+    margin: 6px 0 0;
+    font-size: 13px;
+    color: var(--wam-lp-muted);
+}
+
+.wam-lp__list {
+    padding: 8px 0;
+}
+
+.wam-lp-section {
+    padding: 10px 0 4px;
+}
+
+.wam-lp-section__title {
+    margin: 0;
+    padding: 8px 20px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--wam-lp-muted);
+}
+
+.wam-lp-rail {
+    position: relative;
+    padding: 0 12px 0 20px;
+}
+
+.wam-lp-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    gap: 12px;
+    align-items: start;
+    padding: 10px 8px 10px 0;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 8px;
+}
+
+.wam-lp-item + .wam-lp-item::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: -10px;
+    width: 1px;
+    height: 10px;
+    background: var(--wam-lp-line);
+}
+
+.wam-lp-item__dot {
+    width: 14px;
+    height: 14px;
+    margin-top: 3px;
+    border-radius: 50%;
+    border: 2px solid #cbd5e1;
+    background: #fff;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+.wam-lp-item.is-completed .wam-lp-item__dot {
+    background: var(--wam-lp-blue);
+    border-color: var(--wam-lp-blue);
+}
+
+.wam-lp-item.is-active .wam-lp-item__dot {
+    background: #fff;
+    border-color: var(--wam-lp-blue);
+    box-shadow: 0 0 0 3px var(--wam-lp-blue-soft);
+}
+
+.wam-lp-item.is-active {
+    background: #f8fbff;
+}
+
+.wam-lp-item__body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.wam-lp-item__body strong {
+    font-size: 13.5px;
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--wam-lp-text);
+}
+
+.wam-lp-item__duration {
+    font-style: normal;
+    font-size: 12px;
+    color: var(--wam-lp-muted);
+}
+
+.wam-lp-item:hover .wam-lp-item__body strong {
+    color: var(--wam-lp-blue);
+}
+
+@media (max-width: 991px) {
+    .wam-lp__layout {
+        grid-template-columns: 1fr;
+        min-height: 0;
+    }
+
+    .wam-lp__main {
+        border-right: 0;
+        padding: 16px;
+    }
+
+    .wam-lp__title {
+        font-size: 18px;
+    }
+
+    .wam-lp__side {
+        border-top: 1px solid var(--wam-lp-line);
+        order: 2;
+    }
+
+    .wam-lp__pptx {
+        min-height: 360px;
+    }
+}

@@ -1,0 +1,284 @@
+/* WAM Akademi — login page only (body#page-login-index). */
+
+body#page-login-index.pagelayout-login {
+    background: linear-gradient(180deg, #8EB8EE 0%, #4A8FE0 50%, #2F6FC4 100%);
+    background-attachment: fixed;
+    /* Allow scrolling when the mobile keyboard shrinks the viewport. */
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    height: auto !important;
+    min-height: 100dvh;
+}
+
+body#page-login-index.pagelayout-login #page-wrapper {
+    background: transparent;
+    min-height: 100dvh;
+    height: auto !important;
+    overflow: visible !important;
+}
+
+body#page-login-index.pagelayout-login #page {
+    margin: 0;
+    min-height: 100dvh;
+    height: auto !important;
+    overflow: visible !important;
+    background-color: transparent !important;
+}
+
+body#page-login-index.pagelayout-login #page-content {
+    min-height: 100dvh;
+    height: auto !important;
+    overflow: visible !important;
+}
+
+/* Hide Moodle split-panel left column; center the form card. */
+body#page-login-index .login-layout-left {
+    display: none !important;
+}
+
+body#page-login-index .login-layout-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    min-height: 100dvh;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+body#page-login-index .login-layout-right-content {
+    width: 100%;
+    max-width: 420px;
+    margin: auto;
+}
+
+body#page-login-index .login-container {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    background: linear-gradient(160deg, #FFFFFF 0%, #EAF3FF 40%, #D2E6FF 100%);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 16px 40px rgba(20, 70, 150, 0.28);
+    padding: 1.75rem 1.5rem 1.25rem;
+}
+
+body#page-login-index #region-main,
+body#page-login-index #region-main-box {
+    border: 0;
+    background-color: transparent;
+}
+
+/* Logo + title */
+body#page-login-index #loginlogo {
+    margin-bottom: 0.75rem !important;
+}
+
+body#page-login-index #logoimage {
+    display: block;
+    margin: 0 auto;
+    max-height: 48px;
+    width: auto;
+}
+
+/* Boost 5.2 hides this h1 (left-panel era); restore it for the card layout. */
+body#page-login-index .loginform > h1.h2,
+body#page-login-index .loginform > .h2.h1 {
+    display: block !important;
+    text-align: center;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #1E293B;
+    margin: 0.5rem 0 0.25rem;
+    line-height: 1.35;
+}
+
+body#page-login-index .loginform > p.text-muted {
+    display: none !important; /* redundant under the welcome heading */
+}
+
+/* Error / info / maintenance — keep layout stable */
+body#page-login-index #loginerrormessage,
+body#page-login-index #logininfomessage,
+body#page-login-index .login-maintenance {
+    border-radius: 12px;
+    font-size: 0.875rem;
+    padding: 0.75rem 0.9rem;
+    margin-bottom: 1rem;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+/* Form fields */
+body#page-login-index .login-form-username,
+body#page-login-index .login-form-password {
+    width: 100%;
+}
+
+body#page-login-index .login-form .form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #334155;
+    margin-bottom: 0.35rem;
+}
+
+body#page-login-index .login-form .form-control {
+    width: 100%;
+    height: 48px;
+    min-height: 48px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #F8FBFF;
+    border-color: #C9DBF2;
+    box-shadow: none;
+}
+
+body#page-login-index .login-form .form-control:hover {
+    background-color: #F8FBFF;
+}
+
+body#page-login-index .login-form .form-control:focus {
+    background-color: #ffffff;
+    border-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
+}
+
+/* Password toggle: icon inside the field on the right */
+body#page-login-index .login-form-password .toggle-sensitive-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+body#page-login-index .login-form-password .toggle-sensitive-wrapper .form-control {
+    padding-right: 3rem;
+}
+
+body#page-login-index .login-form-password .toggle-sensitive-wrapper .toggle-sensitive-btn {
+    position: absolute;
+    top: 50%;
+    right: 0.35rem;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 8px;
+    background: transparent !important;
+    color: #64748B;
+    box-shadow: none !important;
+}
+
+body#page-login-index .login-form-password .toggle-sensitive-wrapper .toggle-sensitive-btn:hover,
+body#page-login-index .login-form-password .toggle-sensitive-wrapper .toggle-sensitive-btn:focus,
+body#page-login-index .login-form-password .toggle-sensitive-wrapper .toggle-sensitive-btn:focus-visible {
+    background: rgba(37, 99, 235, 0.08) !important;
+    color: #2563EB;
+    box-shadow: none !important;
+}
+
+/* Forgot password */
+body#page-login-index .login-form .text-end {
+    margin-bottom: 0.85rem !important;
+}
+
+body#page-login-index .login-form .text-end a {
+    font-size: 0.8125rem;
+    color: #2563EB;
+    text-decoration: none;
+}
+
+body#page-login-index .login-form .text-end a:hover {
+    text-decoration: underline;
+}
+
+/* Submit button */
+body#page-login-index .login-form-submit {
+    margin-bottom: 0.75rem !important;
+}
+
+body#page-login-index #loginbtn {
+    width: 100%;
+    height: 48px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #2563EB;
+    border-color: #2563EB;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+body#page-login-index #loginbtn:hover,
+body#page-login-index #loginbtn:focus {
+    background-color: #1D4ED8;
+    border-color: #1D4ED8;
+    color: #ffffff;
+}
+
+/* Compact language + cookies footer row */
+body#page-login-index .login-languagemenu {
+    margin: 0.75rem 0 0.35rem !important;
+    justify-content: center !important;
+}
+
+body#page-login-index .login-languagemenu .dropdown-toggle {
+    font-size: 0.8125rem;
+    color: #475569;
+    text-decoration: none;
+}
+
+body#page-login-index .login-languagemenu .dropdown-menu {
+    max-height: 240px;
+    overflow-y: auto;
+}
+
+body#page-login-index .login-cookiesnotice {
+    text-align: center;
+    padding-top: 0.35rem;
+    border-top: 1px solid #E8F0FA;
+    margin-top: 0.5rem;
+}
+
+body#page-login-index .login-cookiesnotice .btn-link {
+    font-size: 0.75rem;
+    color: #64748B;
+    text-decoration: none;
+}
+
+body#page-login-index .login-cookiesnotice .btn-link:hover,
+body#page-login-index .login-cookiesnotice .btn-link:focus {
+    color: #334155;
+    text-decoration: underline;
+}
+
+/* Soften Moodle footer popover on login */
+body#page-login-index #page-footer {
+    background: transparent !important;
+}
+
+@media (max-width: 575.98px) {
+    body#page-login-index .login-layout-right {
+        padding: 1rem 0.75rem;
+        align-items: flex-start;
+    }
+
+    body#page-login-index .login-layout-right-content {
+        margin: 1rem auto;
+    }
+
+    body#page-login-index .login-container {
+        padding: 1.35rem 1rem 1rem;
+        border-radius: 16px;
+    }
+
+    body#page-login-index .loginform > h1.h2 {
+        font-size: 1.2rem;
+    }
+}

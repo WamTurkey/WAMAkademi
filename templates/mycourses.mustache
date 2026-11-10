@@ -1,0 +1,185 @@
+{{!
+    @template local_wamakademi/mycourses
+
+    Eğitimlerim page for WAM Akademi.
+
+    Context variables required:
+    * wwwroot - site wwwroot
+    * hascourses - whether the learner has any listed courses
+    * coursecount - number of listed courses
+    * courses - array of course cards
+    * hashero - whether continue-hero is available
+    * hero - continue-hero course object
+    * catalogurl - catalog page URL
+}}
+<div class="wam-ed" data-region="wam-mycourses">
+
+    <header class="wam-ed__header">
+        <h1 class="wam-ed__title">Eğitimlerim</h1>
+        <p class="wam-ed__lead">
+            Atanan eğitimlerini takip et, kaldığın yerden devam et
+        </p>
+    </header>
+
+    {{#hashero}}
+        {{#hero}}
+            <section class="wam-ed__continue" aria-labelledby="wam-ed-continue-heading">
+                <div class="wam-ed__continue-body">
+                    <span class="wam-ed__continue-eyebrow">Kaldığın yerden devam et</span>
+                    <h2 id="wam-ed-continue-heading" class="wam-ed__continue-title">
+                        {{fullname}}
+                    </h2>
+                    <p class="wam-ed__continue-meta">
+                        {{#continuelessonname}}{{continuelessonname}} · {{/continuelessonname}}
+                        Ders {{continuelessonindex}} / {{lessoncount}}
+                    </p>
+                    <div class="wam-ed__continue-progress" role="group" aria-label="İlerleme {{progress}} yüzde">
+                        <div class="wam-ed__bar" aria-hidden="true">
+                            <div class="wam-ed__bar-value" style="width: {{progress}}%;"></div>
+                        </div>
+                        <span class="wam-ed__continue-pct">{{progress}}%</span>
+                    </div>
+                    <a class="wam-ed__btn wam-ed__btn--primary" href="{{continueurl}}">
+                        Derse devam et
+                        <span class="wam-ed__btn-arrow" aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </section>
+        {{/hero}}
+    {{/hashero}}
+
+    {{^hashero}}
+        {{#hascourses}}
+            <section class="wam-ed__continue wam-ed__continue--empty" aria-labelledby="wam-ed-continue-empty">
+                <h2 id="wam-ed-continue-empty" class="wam-ed__continue-title">
+                    Devam edilecek bir ders yok
+                </h2>
+                <p class="wam-ed__continue-meta">
+                    Atanan eğitimlerden birine başlayarak buradan devam edebilirsin.
+                </p>
+                <a class="wam-ed__btn wam-ed__btn--secondary" href="#wam-ed-filters" data-wam-ed-filter="assigned">
+                    Atananlara git
+                </a>
+            </section>
+        {{/hascourses}}
+    {{/hashero}}
+
+    <section class="wam-ed__toolbar" id="wam-ed-filters" aria-label="Eğitim filtreleri">
+        <div class="wam-ed__filters" role="group" aria-label="Durum filtresi">
+            <button type="button" class="wam-ed__filter is-active" data-filter="all" aria-pressed="true">
+                Tümü
+            </button>
+            <button type="button" class="wam-ed__filter" data-filter="assigned" aria-pressed="false">
+                Atananlar
+            </button>
+            <button type="button" class="wam-ed__filter" data-filter="active" aria-pressed="false">
+                Devam eden
+            </button>
+            <button type="button" class="wam-ed__filter" data-filter="completed" aria-pressed="false">
+                Tamamlanan
+            </button>
+        </div>
+
+        <label class="wam-ed__search">
+            <span class="wam-ed__search-icon" aria-hidden="true">⌕</span>
+            <span class="visually-hidden">Eğitimlerinde ara</span>
+            <input
+                type="search"
+                id="wamEdSearch"
+                class="wam-ed__search-input"
+                placeholder="Eğitimlerinde ara"
+                autocomplete="off"
+                enterkeyhint="search"
+            >
+        </label>
+    </section>
+
+    <div class="wam-ed__statusline" aria-live="polite" id="wamEdStatus">
+        {{#hascourses}}
+            <span id="wamEdCount">{{coursecount}} eğitim</span>
+        {{/hascourses}}
+        {{^hascourses}}
+            <span id="wamEdCount">0 eğitim</span>
+        {{/hascourses}}
+    </div>
+
+    {{#hascourses}}
+        <div class="wam-ed__grid" id="wamEdGrid">
+            {{#courses}}
+                <article
+                    class="wam-ed__card"
+                    data-status="{{status}}"
+                    data-search="{{searchtext}}"
+                >
+                    <div class="wam-ed__cover">
+                        {{#hascourseimage}}
+                            <img
+                                class="wam-ed__cover-img"
+                                src="{{courseimage}}"
+                                alt=""
+                            >
+                        {{/hascourseimage}}
+                        {{^hascourseimage}}
+                            <div class="wam-ed__cover-fallback" aria-hidden="true">
+                                {{initials}}
+                            </div>
+                        {{/hascourseimage}}
+                    </div>
+
+                    <div class="wam-ed__card-body">
+                        <div class="wam-ed__card-meta">
+                            {{#hascategory}}
+                                <span class="wam-ed__category">{{category}}</span>
+                            {{/hascategory}}
+                            <span class="wam-ed__badge wam-ed__badge--{{status}}">
+                                {{statuslabel}}
+                            </span>
+                        </div>
+
+                        <h3 class="wam-ed__card-title">{{fullname}}</h3>
+
+                        <p class="wam-ed__card-stats">
+                            {{lessoncount}} ders
+                            ·
+                            {{completedlessons}} / {{lessoncount}} tamamlandı
+                        </p>
+
+                        <div class="wam-ed__card-progress" role="group" aria-label="İlerleme {{progress}} yüzde">
+                            <div class="wam-ed__bar" aria-hidden="true">
+                                <div class="wam-ed__bar-value" style="width: {{progress}}%;"></div>
+                            </div>
+                            <span class="wam-ed__pct">{{progress}}%</span>
+                        </div>
+
+                        <div class="wam-ed__card-footer">
+                            <a class="wam-ed__link" href="{{continueurl}}">
+                                {{actionlabel}}
+                                <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            {{/courses}}
+        </div>
+
+        <div class="wam-ed__empty wam-ed__empty--filter" id="wamEdFilterEmpty" hidden>
+            <h2 class="wam-ed__empty-title">Aramanıza uygun eğitim bulunamadı</h2>
+            <p class="wam-ed__empty-text">
+                Filtreyi değiştirin veya farklı bir arama deneyin.
+            </p>
+        </div>
+    {{/hascourses}}
+
+    {{^hascourses}}
+        <div class="wam-ed__empty" id="wamEdEmpty">
+            <h2 class="wam-ed__empty-title">Henüz atanmış bir eğitimin yok</h2>
+            <p class="wam-ed__empty-text">
+                Sana bir eğitim atandığında burada görünecek.
+            </p>
+            <a class="wam-ed__btn wam-ed__btn--primary" href="{{catalogurl}}">
+                Eğitimleri keşfet
+            </a>
+        </div>
+    {{/hascourses}}
+
+</div>
